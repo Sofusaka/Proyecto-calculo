@@ -3,7 +3,7 @@
 cadena='MOTOR DE HERON: Aplasta latas'
 print(cadena.center(70, "="))
 
-vr1=input('¿Qué desea averiguar? Ingrese el número de la operación indicada\n\n1-Cuantas latas puedo aplastar con una cantidad de Litros conocida\n2-Cuanta agua requiero para aplastar una cantidad de Latas conocida\nIngrese aquí la opcion: ')
+vr1=input('¿Qué desea averiguar? Ingrese el número de la operación indicada\n\n1-Cuantas latas puedo aplastar con una cantidad de Litros conocida\n\n2-Cuanta agua requiero para aplastar una cantidad de Latas conocida\n\nIngrese aquí la opcion: ')
 print('======================================================================')
 
 while vr1=='1' or vr1=='2':
@@ -30,9 +30,9 @@ while vr1=='1' or vr1=='2':
         print(f'La cantidad de agua que se requiere para aplastar {latas} cantidad de latas es de {Agua} litros. Esto tomará un total de {tiempo} minutos.')
         print('======================================================================')
     
-    vr1=input('¿Desea volver a realizar el proceso? En el caso de ser así, ingrese la modalidad que quiera ejecutar. Recuerde que:\n0-Deseo terminar el proceso\n1-Cuantas latas se aplastan con una cantidad de Litros conocida\n2-Cuanta agua requiere el motor para aplastar una cantidad de Latas conocida\nIngrese aquí la opcion:  ')
+    vr1=input('¿Desea volver a realizar el proceso? En el caso de ser así, ingrese la modalidad que quiera ejecutar. Recuerde que:\n\n0-Deseo terminar el proceso\n\n1-Cuantas latas se aplastan con una cantidad de Litros conocida\n\n2-Cuanta agua requiere el motor para aplastar una cantidad de Latas conocida\n\n\nIngrese aquí la opcion:  ')
 
-if vr1==0 or vr1.lower=='salir':
-    print('El programa ha finalizado exitosamente')
+if vr1=='0' or vr1.lower=='salir':
+    print('La simulación del motor HERON ha finalizado exitosamente')
 else:
     print('Usted ha ingresado una opción que no es válida. Por favor, ejecute nuevamente el programa')
