@@ -26,8 +26,9 @@ while vr1=='1' or vr1=='2':
             Agua=float(input('Por favor, ingrese nuevamente la cantidad de agua que quiere ingresar al motor: '))
         #Si el agua sobrepasa el limite de 4 litros definidos, el programa le pedira que ingrese nuevamente la cantidad de agua.
 
-        latas=(Agua*50)     
-        tiempo=(latas/50)*60
+        latas=(Agua*150)     
+        tiempo=(latas/150)*60
+    
         #Se realizan las operaciones respectivas para averiguar la cantidad de latas que serán aplastadas, y la cantidad de minutos que esta accion requiere
         cadena='RESULTADO'
         print(cadena.center(70, "="))
@@ -37,13 +38,13 @@ while vr1=='1' or vr1=='2':
 
 
     if vr1=='2':
-        latas=int(input('Ingrese la cantidad de latas que quiere aplastar. El límite es 200: '))
+        latas=int(input('Ingrese la cantidad de latas que quiere aplastar. El límite es 600: '))
         #En el caso de que el usuario haya seleccionado la opcion 2, este tendra que digitar la cantidad de latas que desea que el motor aplaste
-        while latas>200:
+        while latas>600:
             print('Usted ha ingresado una cantidad de latas que sobrepasa el límite')
             Agua=int(input('Por favor, ingrese nuevamente la cantidad de latas que quiere ingresar al motor: '))
         #Si las latas sobrepasan el limite de 200, el programa entrará en un loop hasta que se digite una cantidad aceptada
-        Agua=latas/50
+        Agua=latas/150
         tiempo=Agua*60
         #Se realizan las operaciones respectivas para averiguar la cantidad de litros de agua que se requieren para aplastar 
         #las latas anteriormente definidas, y la cantidad de minutos que esta accion requiere
